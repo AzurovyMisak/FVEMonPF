@@ -141,8 +141,7 @@ struct ContentView: View {
         self.mqttclient.autoReconnect = true
         
         /*self.mqttclient.enableSSL = true
-        self.mqttclient.username = "mphivemq"
-        self.mqttclient.password = "Majkie780331"
+// pdoprdele proc to nejde
         self.mqttclient.allowUntrustCACertificate = false
         self.mqttclient.logLevel = CocoaMQTTLoggerLevel.debug
         */
