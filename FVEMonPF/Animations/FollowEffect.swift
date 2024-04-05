@@ -21,8 +21,8 @@ struct FollowEffect: GeometryEffect {
 
         if !rotate {
             let pt = percentPoint(pct)
-
             return ProjectionTransform(CGAffineTransform(translationX: pt.x, y: pt.y))
+            
         } else {
             // Calculate rotation angle, by calculating an imaginary line between two points
             // in the path: the current position (1) and a point very close behind in the path (2).

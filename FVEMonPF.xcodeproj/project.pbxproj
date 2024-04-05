@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D1339062BB422A500ECF2AE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1339052BB422A500ECF2AE /* SettingsView.swift */; };
+		9D1339082BB4260B00ECF2AE /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1339072BB4260B00ECF2AE /* AboutView.swift */; };
+		9D1339102BBC39F500ECF2AE /* DataStatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D13390F2BBC39F500ECF2AE /* DataStatItem.swift */; };
+		9D1339322BBD624900ECF2AE /* DataStatsYearItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1339312BBD624900ECF2AE /* DataStatsYearItem.swift */; };
+		9D1339342BBD7B0C00ECF2AE /* MainStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1339332BBD7B0C00ECF2AE /* MainStatsView.swift */; };
 		9D1CDA002BA073F5004824B8 /* FVEMonPFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CD9FF2BA073F5004824B8 /* FVEMonPFApp.swift */; };
 		9D1CDA022BA073F5004824B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CDA012BA073F5004824B8 /* ContentView.swift */; };
 		9D1CDA042BA073F6004824B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1CDA032BA073F6004824B8 /* Assets.xcassets */; };
@@ -23,6 +28,11 @@
 		03C6B2268A6B14F79B207EC7 /* Pods_FVEMonPF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FVEMonPF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		466F087B6CF11CE81D2BE1A5 /* Pods-FVEMonPF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FVEMonPF.debug.xcconfig"; path = "Target Support Files/Pods-FVEMonPF/Pods-FVEMonPF.debug.xcconfig"; sourceTree = "<group>"; };
 		67909AFFEC416C48BC60A958 /* Pods-FVEMonPF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FVEMonPF.release.xcconfig"; path = "Target Support Files/Pods-FVEMonPF/Pods-FVEMonPF.release.xcconfig"; sourceTree = "<group>"; };
+		9D1339052BB422A500ECF2AE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9D1339072BB4260B00ECF2AE /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		9D13390F2BBC39F500ECF2AE /* DataStatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStatItem.swift; sourceTree = "<group>"; };
+		9D1339312BBD624900ECF2AE /* DataStatsYearItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStatsYearItem.swift; sourceTree = "<group>"; };
+		9D1339332BBD7B0C00ECF2AE /* MainStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStatsView.swift; sourceTree = "<group>"; };
 		9D1CD9FC2BA073F5004824B8 /* FVEMonPF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FVEMonPF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1CD9FF2BA073F5004824B8 /* FVEMonPFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FVEMonPFApp.swift; sourceTree = "<group>"; };
 		9D1CDA012BA073F5004824B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +65,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9D13390E2BBC38FB00ECF2AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D13390F2BBC39F500ECF2AE /* DataStatItem.swift */,
+				9D1339312BBD624900ECF2AE /* DataStatsYearItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9D1CD9F32BA073F5004824B8 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +95,7 @@
 		9D1CD9FE2BA073F5004824B8 /* FVEMonPF */ = {
 			isa = PBXGroup;
 			children = (
+				9D13390E2BBC38FB00ECF2AE /* Models */,
 				9D592A7B2BA9B00A00576E10 /* Animations */,
 				9D592A7A2BA9AFE000576E10 /* Views */,
 				9D1CD9FF2BA073F5004824B8 /* FVEMonPFApp.swift */,
@@ -97,6 +117,9 @@
 		9D592A7A2BA9AFE000576E10 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9D1339052BB422A500ECF2AE /* SettingsView.swift */,
+				9D1339072BB4260B00ECF2AE /* AboutView.swift */,
+				9D1339332BBD7B0C00ECF2AE /* MainStatsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,8 +260,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D1CDA022BA073F5004824B8 /* ContentView.swift in Sources */,
+				9D1339062BB422A500ECF2AE /* SettingsView.swift in Sources */,
+				9D1339102BBC39F500ECF2AE /* DataStatItem.swift in Sources */,
 				9D592A812BA9B0B000576E10 /* WireTopRight.swift in Sources */,
 				9D592A852BA9B2DE00576E10 /* FollowEffect.swift in Sources */,
+				9D1339342BBD7B0C00ECF2AE /* MainStatsView.swift in Sources */,
+				9D1339322BBD624900ECF2AE /* DataStatsYearItem.swift in Sources */,
+				9D1339082BB4260B00ECF2AE /* AboutView.swift in Sources */,
 				9D592A832BA9B0D700576E10 /* WireBottomRight.swift in Sources */,
 				9D1CDA002BA073F5004824B8 /* FVEMonPFApp.swift in Sources */,
 				9D592A7F2BA9B08800576E10 /* WireBottomLeft.swift in Sources */,

@@ -28,6 +28,21 @@ struct WireTopLeft: Shape {
     }
 }
 
+struct AnimTopLeftNo : View {
+    var body: some View {
+        WireTopLeft()
+            .stroke(
+                //Color.red,
+                LinearGradient(gradient: Gradient(colors: [Color("wire-gradient-light"),Color("wire-gradient-dark")]), startPoint: .leading, endPoint: .trailing),
+                style: StrokeStyle(
+                    lineWidth: 2,
+                    lineCap: .round,
+                    lineJoin: .miter))
+            .foregroundColor(.blue)
+            .frame(width: 105, height: 35)
+    }
+}
+
 struct AnimTopLeftIn : View {
     @State private var flag : Bool = false
     @State private var dim: Bool = false

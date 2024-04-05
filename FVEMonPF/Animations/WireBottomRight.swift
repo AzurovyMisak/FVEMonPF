@@ -29,6 +29,19 @@ struct WireBottomRight: Shape {
     }
 }
 
+struct AnimBottomRightNo : View {
+    var body: some View {
+        WireBottomRight()
+            .stroke(
+                LinearGradient(gradient: Gradient(colors: [Color("wire-gradient-light"),Color("wire-gradient-dark")]), startPoint: .trailing, endPoint: .leading),
+                style: StrokeStyle(
+                    lineWidth: 2,
+                    lineCap: .round,
+                    lineJoin: .miter))
+            .foregroundColor(.blue)
+            .frame(width: 105, height: 30)
+    }
+}
 
 struct AnimBottomRightIn : View {
     @State private var flag : Bool = false
